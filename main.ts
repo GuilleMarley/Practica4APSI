@@ -25,7 +25,7 @@ const env = await load()
 const URL_MONGO = env.MONGO_URL || Deno.env.get("MONGO_URL")
 if(!URL_MONGO){
     console.error("Assign URL as enviroment var")
-    Deno.exit(1)
+   
 }
 
 try{
