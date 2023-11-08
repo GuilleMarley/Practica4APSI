@@ -1,4 +1,4 @@
-import mongoose from "npm:mongoose@7.6.3"; //npmjs.com/package/mongoose
+import mongoose from "npm:mongoose@8.0.0"; //npmjs.com/package/mongoose
 import { Client } from "../types.ts";
 
 const Schema = mongoose.Schema;
