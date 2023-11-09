@@ -1,5 +1,4 @@
 import mongoose from "npm:mongoose@8.0.0"
-//@ts-ignore
 import express ,{Request, Response} from "npm:express@4.18.2"
 import {load} from "https://deno.land/std@0.204.0/dotenv/mod.ts"
 
@@ -25,6 +24,7 @@ const env = await load()
 const URL_MONGO = env.MONGO_URL || Deno.env.get("MONGO_URL")
 if(!URL_MONGO){
     console.error("Assign URL as enviroment var")
+    Deno.exit(1)
 }
 
 try{
